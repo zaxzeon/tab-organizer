@@ -127,6 +127,27 @@ async function organizeTabs(): Promise<{ groups: number }> {
 
     try { await chrome.storage.local.set({ tabOrganizerClusters: stored, tabOrganizerLastRun: { n: features.length, groups: groupCount, ts: Date.now() } }); } catch { /* noop */ }
 
+    // Build Vivaldi Mod snapshot if enabled
+    try {
+        const { tabOrganizerMod } = await chrome.storage.local.get('tabOrganizerMod');
+        if (tabOrganizerMod?.enabled) {
+            const idToTab = new Map<number, TabInfo>();
+            for (const t of list) idToTab.set(t.id, t);
+            const snapshot = {
+                ts: Date.now(),
+                version: chrome.runtime.getManifest().version,
+                clusters: stored.map(c => ({
+                    name: c.name,
+                    members: c.tabIds.map(id => {
+                        const t = idToTab.get(id);
+                        return { url: t?.url || '', title: t?.title || '' };
+                    })
+                }))
+            };
+            await chrome.storage.local.set({ tabOrganizerModSnapshot: snapshot });
+        }
+    } catch { /* noop */ }
+
     // Hook: detection only (mod will act when present)
     if (isVivaldi()) {
         // Future: notify mod or attempt stacks via vivaldi API if available
