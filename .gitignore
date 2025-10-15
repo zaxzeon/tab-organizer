@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+extension/node_modules/
+extension/dist/
+extension/.vite/
+wasm/bin/
+*.wasm
+*.zip
+

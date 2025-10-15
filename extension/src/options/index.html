@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tab Organizer Options</title>
+    <script type="module" src="./options.ts"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 16px;
+            max-width: 640px
+        }
+
+        label {
+            display: block;
+            margin: 8px 0
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Options</h1>
+    <label>
+        Similarity threshold
+        <input id="threshold" type="number" min="0" max="1" step="0.05" />
+    </label>
+    <label>
+        Sleep inactive tabs after grouping
+        <input id="sleep" type="checkbox" />
+    </label>
+    <label>
+        Domain weight boost (TF‑IDF path)
+        <input id="domainBoost" type="number" min="1" step="1" />
+    </label>
+    <label>
+        Custom stopwords (comma or newline separated)
+        <textarea id="stopwords" rows="4" style="width:100%" placeholder="e.g. login, home, profile"></textarea>
+    </label>
+    <button id="save">Save</button>
+    <div id="status" style="margin-top:8px;color:#555"></div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+{
+    "manifest_version": 3,
+    "name": "NLP Tab Organizer",
+    "version": "0.1.0",
+    "description": "Organize, group, name, and sleep tabs using lightweight NLP/ML.",
+    "permissions": [
+        "tabs",
+        "tabGroups",
+        "storage"
+    ],
+    "host_permissions": [],
+    "background": {
+        "service_worker": "src/background.ts",
+        "type": "module"
+    },
+    "action": {
+        "default_title": "Organize Tabs",
+        "default_popup": "src/popup/index.html"
+    },
+    "options_page": "src/options/index.html",
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "assets/tab_grouper.wasm",
+                "assets/wasm_exec.js"
+            ],
+            "extension_pages": [
+                "*"
+            ]
+        }
+    ],
+    "commands": {
+        "organize-tabs": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+G",
+                "mac": "Command+Shift+G"
+            },
+            "description": "Trigger tab organization"
+        }
+    }
+}

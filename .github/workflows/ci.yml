@@ -1,0 +1,55 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.22.x"
+
+      - name: Go unit tests
+        working-directory: wasm
+        run: |
+          go test ./...
+
+      - name: Build WASM
+        working-directory: wasm
+        run: |
+          make build
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install deps
+        working-directory: extension
+        run: |
+          npm ci
+
+      - name: TS unit tests
+        working-directory: extension
+        run: |
+          npm run test
+
+      - name: Build extension
+        working-directory: extension
+        run: |
+          npm run build
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: extension-dist
+          path: extension/dist
